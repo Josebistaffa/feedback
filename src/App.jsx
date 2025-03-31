@@ -1,4 +1,5 @@
 import iconstar from "./assets/icon-star.svg"
+import illustrationthankyou from "./assets/illustration-thank-you.svg"
 import { useState } from "react"
 
 export function App(){
@@ -28,8 +29,7 @@ export function App(){
           <div className="flex justify-between mb-6">
             <input type="button" value= {1} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-medium-grey text-sm font-bold focus:bg-medium-grey focus:text-white"  onClick={() => handleMudarNotaAvaliacao(1)} />
             <input type="button" value= {2} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-medium-grey text-sm font-bold focus:bg-medium-grey focus:text-white " onClick={() => handleMudarNotaAvaliacao(2)} />
-            <input type="button" value= {2} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-medium-grey text-sm font-bold focus: bg-medium-grey focus:text-white " onClick={() => handleMudarNotaAvaliacao(2)} />
-            <input type="button" value= {3} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-medium-grey text-sm font-bold focus:bg-medium-grey focus:text-white"onClick={() => handleMudarNotaAvaliacao(3)}/>
+    <input type="button" value= {3} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-medium-grey text-sm font-bold focus:bg-medium-grey focus:text-white"onClick={() => handleMudarNotaAvaliacao(3)}/>
             <input type="button" value= {4}className="bg-dark-blue w-10.5 h-10.5 rounded-full text-medium-grey text-sm font-bold focus:bg-medium-grey focus:text-white" onClick={() => handleMudarNotaAvaliacao(4)}/>
             <input type="button" value= {5} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-medium-grey text-sm font-bold focus:bg-medium-grey focus:text-white"onClick={() => handleMudarNotaAvaliacao(5)}/>
           </div>
@@ -38,7 +38,10 @@ export function App(){
         </div>
       ) : (
         <div className="bg-gradient-dark text-white mx-6 p-6 rounded-2xl font-overpass">
-          <p>{notaAvaliacao}</p>
+          <img className="mx-auto mb-6" src={illustrationthankyou} alt="illustration thank you" />
+          <p className="text-orange bg-dark-blue w-fit mx-auto px-3 py-1.25 rounded-3xl mb-6">You selected {notaAvaliacao}out of 5</p>
+          <h1 className="text-2xl font-bold mb-2.5 text-center">Thank You!</h1>
+          <p className= "text-sm text-light-grey leading-1 text-center">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
         </div>
       )
     )
