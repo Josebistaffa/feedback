@@ -25,12 +25,12 @@ export function CardInicial({setNotaAvaliacao, notaAvaliacao, setSubmited}) {
             
             <InputButton value={1} setNotaAvaliacao={setNotaAvaliacao} />
             <InputButton value={2} setNotaAvaliacao={setNotaAvaliacao} />
-            <InputButton value={3} setNotaAvaliacao={setNotaAvaliacao}/>
-            <InputButton value={4} setNotaAvaliacao={setNotaAvaliacao}/>
-            <InputButton value={5} setNotaAvaliacao={setNotaAvaliacao}/>
+            <InputButton value={3} setNotaAvaliacao={setNotaAvaliacao} />
+            <InputButton value={4} setNotaAvaliacao={setNotaAvaliacao} />
+            <InputButton value={5} setNotaAvaliacao={setNotaAvaliacao} />
           </div>
     
-          <button onClick={handleSubmit} className="bg-orange w-full uppercase tracking-1 font-bold rounded-3xl text-sm py-3 hover:bg-white hover:text-orange cursor-pointer">Submit</button>
+          <button onClick={handleSubmit} className="bg-orange w-full uppercase tracking-1 font-bold rounded-3xl text-sm py-3 hover:bg-white hover:text-orange cursor-pointer duration-500">Submit</button>
         </div>
     )
 }
